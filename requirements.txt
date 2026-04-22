@@ -1,0 +1,5 @@
+cryptography==42.0.5
+pyasn1==0.6.0
+construct==2.10.68
+hexdump==4.0.0
+libusb==1.0.8
