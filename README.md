@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ```bash
 git clone https://github.com/d3cryptorde/guentherjb.git
-cd sloof
+cd guentherjb
 ```
 
 ### 2. Set Up Python Environment
