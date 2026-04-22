@@ -1,6 +1,6 @@
 # sloof — iOS 26.1 Kernel Exploit
 
-**CVE-2026-4812: Core Security Error**
+**CVE-2026-20700: Dyld Trust Error**
 
 <p align="center">
   <img src="https://img.shields.io/badge/iOS-26.1-green" alt="iOS 26.1">
@@ -27,7 +27,7 @@
 
 **Required iOS Version: iOS 26.1 ONLY**
 
-> ⚠️ This exploit **ONLY** works on iOS 26.1. Apple patched CVE-2026-4812 in iOS 26.2. 
+> ⚠️ This exploit **ONLY** works on iOS 26.2. Apple patched CVE-2026-4812 in iOS 26.3. 
 
 ---
 
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/sloof-exploit/sloof.git
+git clone https://github.com/d3cryptorde/guentherjb.git
 cd sloof
 ```
 
