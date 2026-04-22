@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 sloof - iOS 26.1 Kernel Exploit
-CVE-2026-4812: Core Security Error
+CVE-2026-20700: Dyld Trust Error
 WARNING: For educational/research purposes only
 """
 import os
@@ -87,12 +87,12 @@ def show_warning():
     print("╔═══════════════════════════════════════════════════════════════╗")
     print("║                    ⚠️  WARNING  ⚠️                        ║")
     print("╠═══════════════════════════════════════════════════════════════╣")
-    print("║  CVE-2026-4812: Core Security Error                          ║")
+    print("║  CVE-2026-20700: Dyld Trust Error                          ║")
     print("║  This vulnerability allows kernel code execution!             ║")
-    print("║  Apple patched this in iOS 26.2 - USE AT YOUR OWN RISK       ║")
+    print("║  Apple patched this in iOS 26.3 - USE AT YOUR OWN RISK       ║")
     print("╚═══════════════════════════════════════════════════════════════╝")
     print(f"{Colors.RESET}")
-    Colors.error("CORE SECURITY ERROR DETECTED")
+    Colors.error("Vulnerable iOS Version DETECTED")
     time.sleep(1)
 
 def get_device_info() -> Dict[str, str]:
@@ -110,8 +110,6 @@ def get_device_info() -> Dict[str, str]:
 
 def init_exploit_chain():
     Colors.step("Initializing exploit chain...")
-    
-    # Fake ROP gadgets
     rop_gadgets = [
         "0x180040000", "0x180040004", "0x180040008", "0x18004000C",
         "0x180040010", "0x180040014", "0x180040018", "0x18004001C",
@@ -245,21 +243,20 @@ def reveal_april_fools():
     time.sleep(1)
     print(f"\n{Colors.MAGENTA}")
     print("╔═══════════════════════════════════════════════════════════════╗")
-    print("║              🎄 APRIL FOOLS! 🎄                                ║")
+    print("║                     You got Fooled                               ║")
     print("╠═══════════════════════════════════════════════════════════════╣")
-    print("║  This is a FAKE jailbreak! April Fools 2026!                   ║")
+    print("║  This is a FAKE jailbreak! There is no working Jailbreak in 2026!                   ║")
     print("╠═══════════════════════════════════════════════════════════════╣")
     print(f"║  Exploit Name: {easter_name:<47}║")
     print(f"║  Secret Message: {easter_msg:<40}║")
     print("╠═══════════════════════════════════════════════════════════════╣")
-    print("║  iOS 26.1 doesn't exist (it's April 2026, not 2024!)          ║")
-    print("║  Apple doesn't use CVE-2026-4812 (future CVE)                  ║")
+    print("║  iOS 26.1 isnt jailbreakable (it's 2026, not 2024!)           ║")                ║")
     print("║  This was a joke - don't try this on a real device!           ║")
     print("╚═══════════════════════════════════════════════════════════════╝")
     print(f"{Colors.RESET}")
     
     time.sleep(1)
-    Colors.info("Thanks for playing! Have a great April Fools Day! 🎉")
+    Colors.info("Thanks for playing! Have a great Day! 🎉")
 
 def main():
     os.system('clear' if os.name == 'posix' else 'cls')
@@ -267,8 +264,8 @@ def main():
     print_header()
     print_ascii_art()
     
-    Colors.step("sloof v1.0.0 - iOS 26.1 Kernel Exploit")
-    Colors.step("CVE-2026-4812: Core Security Error")
+    Colors.step("sloof v1.0.0 - iOS 26.1- iOS 26.2 Kernel Exploit")
+    Colors.step("CVE-2026-20700 Dyld Trust Error")
     print()
     
     if not show_warning():
